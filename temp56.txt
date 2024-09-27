@@ -1,0 +1,1662 @@
+https://assessements.reinprep.com/student/login
+
+
+TEMPBTech-CSE056
+import math
+
+
+  
+   
+def findWinner(votes):
+    n = len(votes);
+    prevCount = 0;
+    result = "";
+
+    # Iterate over every string
+    for i in range(0, n): 
+        count = 0;
+
+       
+       
+        for j in range(0, n): 
+            if (votes[i] == votes[j]):
+                count += 1;
+
+            if count > previous count
+            if (count > prevCount):
+                prevCount = count;
+                result = votes[i];
+        
+            elif (count == prevCount) :
+                result = min(result, votes[i]);
+        
+    
+    print(result);
+
+
+votes = [ "john", "johnny", "jackie", "johnny",
+        "john", "jackie", "jamie",  "jamie",
+        "john", "johnny", "jamie",  "johnny",
+        "john" ];
+
+findWinner(votes);
+
+'''str="happy coding"
+print(str)
+a="ha,ppy"
+find("pp")
+
+def reverse(n):
+    if(n>0):
+        print(n)
+        reverse(n-1)
+reverse(10)
+
+
+def reverse(n):
+     if(n>0):
+            reverse(n-1)
+            print(n)
+reverse(10)
+
+n,p=int(input()),int(input())
+
+if n%2==1:
+   n=n+1
+
+
+t,p=map(int,input("enter the page num").split())
+FT=p//2
+BT=t//2-p//21234
+
+print(min(FT,BT))
+
+
+def digit(n):
+   dig=0
+   if(n>0):
+     r=n%10
+     dig+=1
+     digit(n//10)
+     print(dig)
+n=int(input())
+digit(123)
+
+
+li_1=list(map(int,input("enter values").split()))
+print("li_1")
+
+
+li=[1,2,3,4,2]
+
+
+
+li=[11,22,33]
+new_list=sorted(li)
+print(li.sort())
+print(li)
+print([1,2,3,4])
+
+
+list2=list(map(int,input("enter values").split()))
+print(list2.pop())
+
+'''
+
+
+
+
+'''
+
+li=[1,2,3,4,5,2,2,2,3,2,2]
+print(li.insert(0,4))
+
+total=sum(li)
+print(total)
+li.remove(4)
+
+print(li.count(2))
+print(li)
+
+li.reverse()
+print(li)
+
+''''''
+li=[1,2,3,4,5]
+li2=[1,2,3,4,5]
+li1=li2
+print(li1 is li)
+print(id(li1))
+print(id(li2))
+
+
+li=[11,22,33,]
+print(max(li))
+li.remove(max(li))
+
+li.remove(min(li))
+
+print(min(li))
+
+def pattern(n):
+    for i in range(n,0,-1):
+        print("*" * i)
+     
+pattern(4)
+
+
+li=list(map(int,input("enter values").split()))
+
+print([i*'*' for i in li]) 
+
+
+li=[1,2,3],[4,5,6],[7,8,9]
+sum=0
+for i in range(3):
+    for j in range(3):
+        if(i>j):
+            sum+=li[i][j]  
+print(sum)
+
+Input=int(input())
+a= Input
+rev=0
+while(Input>0):
+    number=Input%10
+    rev=rev*10+number
+    Input//=10
+    
+if(a==rev):
+    print("palindrom")
+else:
+    print("not a Palindrome")
+
+li={1,2,3,4,5,6}
+li2={2,3,4,5}
+li.add(7)
+li.remove(3)
+print(li)
+union_set=li.intersection(li2)
+print(union_set)
+   
+
+cse={"id":1,"ph":123}
+del cse["ph"]
+
+print(cse)
+
+
+num=20
+if(num==1):
+    print("neither p not c")
+elif(num>1):
+    for i in range(2,num//2+1):
+        if(num%2==0):
+            print("not prime")
+        else:
+            print("prime")
+ 
+
+
+
+x,y=5,9            
+for i in range(x,y+1):
+    for j in range(2,i-1):
+        if(i%j==0):
+            break
+        else:
+            print(i)
+
+
+
+
+n=input("enter the name")
+a=lambda X:n(upper)
+print(a(n))
+
+def fun(X):
+    return X
+fun(6)
+
+from functools import reduce
+
+n=["meg","abc","pen","DAD","meghashree","mom"]
+a=filter(lambda X:X==X[::-1],n )
+
+
+print(list(a))
+
+sum=[li1(i)+li2(j)for i in range (len(li1))  for j in range (len(li2)) if(i==j):]
+print(sum)
+
+
+a,b=6,10
+x,y=a,b
+while(b>0):
+    r=a%b
+    a=b
+    b=r
+print(abs(a))
+lcm=abs(x*y//a)
+print(lcm)
+
+a,b=2,10
+def fun(a,b):
+    r=a%b
+    gcd=(b,r)
+    lcm=r//gcd
+    a=b
+    
+print(abs(a))
+
+print(lcm)
+
+a=int(input())
+b=int(input())
+try:
+    print("file opened")
+   
+    sum=a%b
+    print(sum)
+    print("file closed")
+except Exception as ex:
+    print("exception occured",ex)
+finally:
+    print("file closed finally")
+  
+
+import random
+num=random.random()
+print(nm)
+ 
+str=[ 1,2,3,4,2]
+
+print(str.count(2))
+
+x=str.lstrip()
+
+y=str.rstrip()
+print(y)
+
+print(x)
+
+class Student():
+    def __init__(self,name,age,dept):
+        self.name=name
+        self.age=age
+        self.dept=dept
+    def __str__ (self):
+        return(f"Student Name: .{self.name}\n"
+        f" Student Age: {self.age}\n"
+        f"Dept: {self.dept}\n")
+student1=Student('jenny',19,'cse')
+student2=Student('me',18,'cse')
+print(student1)
+print(student2)
+ 
+def reverse_number(n):
+    rev = 0
+    while n > 0:
+        rev = rev * 10 + (n % 10)
+        n //= 10
+    return rev
+def is_adam_number(n):
+    n_sq = n * n
+    rev_n = reverse_number(n)
+    rev_n_sq = rev_n * rev_n
+    rev_sq_rev_n_sq = reverse_number(rev_n_sq)  
+    return n_sq == rev_sq_rev_n_sq
+input=int(input())
+if is_adam_number(input):
+    print("Adam Number")
+else:
+
+
+def perfect(n):
+     n=6 
+     sum=0
+     for i in range(1,n):
+        if(n%1==0):
+        
+         n=n//10
+         print("perfect"if(sum==n)else"not")
+    print("Not a adam number")
+
+
+n=16
+for i in range(0,10,n/2):
+        print("happy")
+ 
+'''
+i=j=1
+while(i<n):
+    j=i*j  
+
+
+'''str= "happy coding"
+print(str[-1])
+
+
+a=map(int,input())
+if(a==10):
+    print ("equal")
+elif():
+    print("not equal")
+
+name="insar"
+age=18
+
+print("name:",name,"age:",age)
+
+x=2.34567
+print("%.2f"%x)
+print("{:.2f}".format(x))
+print(f"{x:.2f}")
+
+name="BITM"
+address="bellary"
+print("i am from{1},and it in{0}".format(name,address))
+print("{1} is {0} and {0} is{1}".format("sky","blue"))
+
+name="nisar"
+age=18
+print("My name is {1},and im {0}".format(name,age))
+
+
+print("happy" ,"codimg","1","2", sep="-",end="")
+print("coding")
+
+x=923456
+print("{:07}".format(x))
+'''
+
+
+n=5
+fact=1
+while(n>0):
+    print(n)
+    fact=fact*n
+    n=n-1
+    print(fact)
+  '''n=int(input())
+pro=1
+while(n>0):
+    rem=n%10
+    pro*=rem
+    n=n//10
+print(pro)
+
+n=list(map(int,input("enter values").split()))
+n.sort()
+print(n.sort())
+print(n[-1]*n[-2])
+
+
+
+
+
+class Node:
+    def __init__(self,value):
+         self.value=value
+         self.next=None
+class Linkedlist:
+     def __init__(self):
+          self.head=None  #pointer
+
+     def adding_ele(self,value):
+           new_node=Node(value)  #calling the class node
+           if not self.head:   #no of elements initilized
+               self.head=new_node
+               return
+           last_node=self.head
+           while last_node.next:
+             last_node=last_node.next
+           last_node.next=new_node 
+     def traversal(self):
+         current_node=self.head
+         while current_node:
+             print(current_node.value,end= "->")
+             current_node=current_node.next
+         print("no more elements")
+                 
+L1=Linkedlist()
+L1.adding_ele(2)
+L1.adding_ele(5)
+L1.traversal()
+
+from operator import index
+
+
+class Node:
+    def __init__(self,value):
+         self.value=value
+         self.next=None
+class Linkedlist:
+     def __init__(self):
+          self.head=None  #pointer
+
+     def adding_ele(self,value):
+           new_node=Node(value)  #calling the class node
+           if not self.head:   #no of elements initilized
+               self.head=new_node
+               return
+           last_node=self.head
+           while last_node.next:
+             last_node=last_node.next
+           last_node.next=new_node 
+
+     def add_element_begginer(self,value):
+        new_node=Node(value)
+        new_node.next=self.head
+        self.head=new_node
+
+     def add_element_at_index(self,index,value):
+         if(index==0):
+             if(index<0):
+                 print("value 0")
+             self.add_element_begginer(value) #begin
+             return
+         new_node=Node(value) #created
+         current=self.head #pointer
+         count=0
+         while current is not None and count<index-1:
+             current=current.next
+             count+=1
+         if current is None:
+             print(index,":index out range")
+             return
+         new_node.next=current.next
+         current.next=new_node
+         
+
+     def delete_element(self,value):
+         if self.head is None:
+             print("list is empty")
+             return
+         if self.head.value==value:
+             self.head=self.head.next
+             return
+         current=self.head
+         while current.next and current.next.value!=value:
+             current=current.next
+         if current.next is None:
+             print("element {value}not found")
+         else:
+             current.next=current.next.next
+             
+
+     def delete_index(self):
+         if self.head is None:
+             print("list is empty")
+             return
+         if index ==0:
+              self.head=self.head.next
+              return 
+         current=self.head
+         count=0
+         while current and count<index-1:
+             current=current.next
+             count+=1
+
+
+         if current is None or current.next is None:
+             print("index {index} out of range")
+         else:
+             current.next=current.next.next
+                
+
+         
+               
+            
+     def traversal(self):
+         current_node=self.head
+         while current_node:
+             print(current_node.value,end= "->")
+             current_node=current_node.next
+         print("no more elements")
+    
+                 
+L1=Linkedlist()
+L1.adding_ele(2)
+L1.adding_ele(5)
+L1.traversal()
+L1.add_element_begginer(10)
+L1.add_element_begginer(60)
+L1.traversal()
+L1.add_element_at_index(2,4)
+L1.add_element_at_index(3,7)
+L1.traversal()
+L1.delete_index(2)
+L1.traversal()
+
+
+class Node:
+  def __init__(self,value):
+      self.value=value
+      self.left=None
+      self.right=None
+class BST:
+  def __init__(self):
+      self.root=None
+ 
+  def insert(self,value):
+    if self.root is None:
+      self.root=Node(value)  
+    else:
+      self._insert(self.root,value)   #fun call
+
+  def _insert(self,current_node,value):
+    if value <current_node.value:
+     if current_node.left is None: 
+      current_node.left=Node(value)
+     else:
+      self._insert(current_node.left,value)
+    elif value>current_node.value:
+      if current_node.right is None:
+       current_node.right=Node(value)
+      else:
+       self._insert(current_node.right,value)
+    else:
+      pass
+  def inorder(self):
+    return self._inorder(self.root,[])
+
+  def _inorder(self,current_node,result):
+     if current_node:
+        self._inorder(current_node.left,result)
+        result.append(current_node.value)
+        self._inorder(current_node.right,result)
+     return result
+
+
+
+bst=BST()
+bst.insert(2)
+bst.insert(10)
+bst.insert(4)
+bst.insert(10)
+bst.insert(5)
+print("inorder traversal:", bst.inorder())
+
+
+'''str="happy coding"
+print(str)
+a="ha,ppy"
+find("pp")
+
+def reverse(n):
+    if(n>0):
+        print(n)
+        reverse(n-1)
+reverse(10)
+
+
+def reverse(n):
+     if(n>0):
+            reverse(n-1)
+            print(n)
+reverse(10)
+
+n,p=int(input()),int(input())
+
+if n%2==1:
+   n=n+1
+
+
+t,p=map(int,input("enter the page num").split())
+FT=p//2
+BT=t//2-p//21234
+
+print(min(FT,BT))
+
+
+def digit(n):
+   dig=0
+   if(n>0):
+     r=n%10
+     dig+=1
+     digit(n//10)
+     print(dig)
+n=int(input())
+digit(123)
+
+
+li_1=list(map(int,input("enter values").split()))
+print("li_1")
+
+
+li=[1,2,3,4,2]
+
+
+
+li=[11,22,33]
+new_list=sorted(li)
+print(li.sort())
+print(li)
+print([1,2,3,4])
+
+
+list2=list(map(int,input("enter values").split()))
+print(list2.pop())
+
+'''
+
+
+
+
+'''
+
+li=[1,2,3,4,5,2,2,2,3,2,2]
+print(li.insert(0,4))
+
+total=sum(li)
+print(total)
+li.remove(4)
+
+print(li.count(2))
+print(li)
+
+li.reverse()
+print(li)
+
+''''''
+li=[1,2,3,4,5]
+li2=[1,2,3,4,5]
+li1=li2
+print(li1 is li)
+print(id(li1))
+print(id(li2))
+
+
+li=[11,22,33,]
+print(max(li))
+li.remove(max(li))
+
+li.remove(min(li))
+
+print(min(li))
+
+def pattern(n):
+    for i in range(n,0,-1):
+        print("*" * i)
+     
+pattern(4)
+
+
+li=list(map(int,input("enter values").split()))
+
+print([i*'*' for i in li]) 
+
+
+li=[1,2,3],[4,5,6],[7,8,9]
+sum=0
+for i in range(3):
+    for j in range(3):
+        if(i>j):
+            sum+=li[i][j]  
+print(sum)
+
+Input=int(input())
+a= Input
+rev=0
+while(Input>0):
+    number=Input%10
+    rev=rev*10+number
+    Input//=10
+    
+if(a==rev):
+    print("palindrom")
+else:
+    print("not a Palindrome")
+
+li={1,2,3,4,5,6}
+li2={2,3,4,5}
+li.add(7)
+li.remove(3)
+print(li)
+union_set=li.intersection(li2)
+print(union_set)
+   
+
+cse={"id":1,"ph":123}
+del cse["ph"]
+
+print(cse)
+
+
+num=20
+if(num==1):
+    print("neither p not c")
+elif(num>1):
+    for i in range(2,num//2+1):
+        if(num%2==0):
+            print("not prime")
+        else:
+            print("prime")
+ 
+
+
+
+x,y=5,9            
+for i in range(x,y+1):
+    for j in range(2,i-1):
+        if(i%j==0):
+            break
+        else:
+            print(i)
+
+
+
+
+n=input("enter the name")
+a=lambda X:n(upper)
+print(a(n))
+
+def fun(X):
+    return X
+fun(6)
+
+from functools import reduce
+
+n=["meg","abc","pen","DAD","meghashree","mom"]
+a=filter(lambda X:X==X[::-1],n )
+
+
+print(list(a))
+
+sum=[li1(i)+li2(j)for i in range (len(li1))  for j in range (len(li2)) if(i==j):]
+print(sum)
+
+
+a,b=6,10
+x,y=a,b
+while(b>0):
+    r=a%b
+    a=b
+    b=r
+print(abs(a))
+lcm=abs(x*y//a)
+print(lcm)
+
+a,b=2,10
+def fun(a,b):
+    r=a%b
+    gcd=(b,r)
+    lcm=r//gcd
+    a=b
+    
+print(abs(a))
+
+print(lcm)
+
+a=int(input())
+b=int(input())
+try:
+    print("file opened")
+   
+    sum=a%b
+    print(sum)
+    print("file closed")
+except Exception as ex:
+    print("exception occured",ex)
+finally:
+    print("file closed finally")
+  
+
+import random
+num=random.random()
+print(nm)
+ 
+str=[ 1,2,3,4,2]
+
+print(str.count(2))
+
+x=str.lstrip()
+
+y=str.rstrip()
+print(y)
+
+print(x)
+
+class Student():
+    def __init__(self,name,age,dept):
+        self.name=name
+        self.age=age
+        self.dept=dept
+    def __str__ (self):
+        return(f"Student Name: .{self.name}\n"
+        f" Student Age: {self.age}\n"
+        f"Dept: {self.dept}\n")
+student1=Student('jenny',19,'cse')
+student2=Student('me',18,'cse')
+print(student1)
+print(student2)
+ 
+def reverse_number(n):
+    rev = 0
+    while n > 0:
+        rev = rev * 10 + (n % 10)
+        n //= 10
+    return rev
+def is_adam_number(n):
+    n_sq = n * n
+    rev_n = reverse_number(n)
+    rev_n_sq = rev_n * rev_n
+    rev_sq_rev_n_sq = reverse_number(rev_n_sq)  
+    return n_sq == rev_sq_rev_n_sq
+input=int(input())
+if is_adam_number(input):
+    print("Adam Number")
+else:
+
+
+def perfect(n):
+     n=6 
+     sum=0
+     for i in range(1,n):
+        if(n%1==0):
+        
+         n=n//10
+         print("perfect"if(sum==n)else"not")
+    print("Not a adam number")
+
+
+n=16
+for i in range(0,10,n/2):
+        print("happy")
+
+i=j=1
+while(i<n):
+    j=i*j  
+
+1 0 2 3 0 0 2 3 0 4
+n=list(map(int,input("enter values").split()))
+n.sort() 
+print(n.sort())
+print(n[-1]*n[-2])1 0 2 3 0 0 2 3 0 4
+
+
+n=list(map(int,input("enter values").split()))
+for i in n:
+    if(i==0):
+        n.remove(i)
+        n.append(0)
+print(n)
+
+listA = [1,5,6, 7,11,14]
+
+
+res = list(set(range(max(listA) + 1)) - set(listA))
+
+
+print("Missing elements from the list : \n" ,res)
+listA = [1,5,6, 7,11,14]
+
+# printing original list
+print("Given list : ",listA)
+
+# using set
+res = list(set(range(max(listA) + 1)) - set(listA))
+
+
+# Result
+print("Missing elements from the list : \n" ,res)
+
+
+
+li=[0,2,3,5]                  
+for i in range(max(li)+1):
+   if i not in li:
+     print(i)
+arr = [1,2,3,4,5,6,7,9,10]
+missing_elements = []
+for ele in range(arr[0], arr[-1]+1):
+    if ele not in arr:
+        missing_elements.append(ele)
+print(missing_elements)
+
+li=[0,1,2,4]
+
+n=max(li)
+print(n)
+m=n*(n+1)//2
+print(m)
+x=sum(li)
+print(x)
+t=m-x
+print(t)
+
+
+li=[1,2,3,6,4]
+max=li[0]
+
+for i in li:
+    if i>max[0]:
+        max=li[i]
+        print(max)
+        
+print(17*19)
+a,b=map(int,input().split())
+print(a+b)
+   
+
+
+
+
+
+
+for i in  k:
+    n= k.pop()
+    k.append(0, n)
+print(k)
+
+   
+
+
+
+
+k=[1,2,3,4,5]
+k.pop()
+k.pop()
+print(k)
+k.index(0,4)
+k.index(1,5)
+print(k)
+
+
+from operator import index
+
+
+class Node:
+    def __init__(self,value):
+         self.value=value
+         self.next=None
+class Linkedlist:
+     def __init__(self):
+          self.head=None  #pointer
+
+     def adding_ele(self,value):
+           new_node=Node(value)  #calling the class node
+           if not self.head:   #no of elements initilized
+               self.head=new_node
+               return
+           last_node=self.head
+           while last_node.next:
+             last_node=last_node.next
+           last_node.next=new_node 
+
+     def add_element_begginer(self,value):
+        new_node=Node(value)
+        new_node.next=self.head
+        self.head=new_node
+
+     def add_element_at_index(self,index,value):
+         if(index==0):
+             if(index<0):
+                 print("value 0")
+             self.add_element_begginer(value) #begin
+             return
+         new_node=Node(value) #created
+         current=self.head #pointer
+         count=0
+         while current is not None and count<index-1:
+             current=current.next
+             count+=1
+         if current is None:
+             print(index,":index out range")
+             return
+         new_node.next=current.next
+         current.next=new_node
+         
+
+     def delete_element(self,value):
+         if self.head is None:
+             print("list is empty")
+             return
+         if self.head.value==value:
+             self.head=self.head.next
+             return
+         current=self.head
+         while current.next and current.next.value!=value:
+             current=current.next
+         if current.next is None:
+             print("element {value}not found")
+         else:
+             current.next=current.next.next
+             
+
+     def delete_index(self):
+         if self.head is None:
+             print("list is empty")
+             return
+         if index ==0:
+              self.head=self.head.next
+              return 
+         current=self.head
+         count=0
+         while current and count<index-1:
+             current=current.next
+             count+=1
+
+
+         if current is None or current.next is None:
+             print("index {index} out of range")
+         else:
+             current.next=current.next.next
+                
+
+         
+               
+            
+     def traversal(self):
+         current_node=self.head
+         while current_node:
+             print(current_node.value,end= "->")
+             current_node=current_node.next
+         print("no more elements")
+    
+                 
+L1=Linkedlist()
+L1.adding_ele(2)
+L1.adding_ele(5)
+L1.traversal()
+L1.add_element_begginer(10)
+L1.add_element_begginer(60)
+L1.traversal()
+L1.add_element_at_index(2,4)
+L1.add_element_at_index(3,7)
+L1.traversal()
+L1.delete_index(2)
+L1.traversal()
+
+
+class Node:
+  def __init__(self,value):
+      self.value=value
+      self.left=None
+      self.right=None
+class BST:
+  def __init__(self):
+      self.root=None
+ 
+  def insert(self,value):
+    if self.root is None:
+      self.root=Node(value)  
+    else:
+      self._insert(self.root,value)   #fun call
+
+  def _insert(self,current_node,value):
+    if value <current_node.value:
+     if current_node.left is None: 
+      current_node.left=Node(value)
+     else:
+      self._insert(current_node.left,value)
+    elif value>current_node.value:
+      if current_node.right is None:
+       current_node.right=Node(value)
+      else:
+       self._insert(current_node.right,value)
+    else:
+      pass
+  def inorder(self):
+    return self._inorder(self.root,[])
+
+  def _inorder(self,current_node,result):
+     if current_node:
+        self._inorder(current_node.left,result)
+        result.append(current_node.value)
+        self._inorder(current_node.right,result)
+     return result
+
+
+
+bst=BST()
+bst.insert(2)
+bst.insert(10)
+bst.insert(4)
+bst.insert(10)
+bst.insert(5)
+print("inorder traversal:", bst.inorder())
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+def roate(nums,k):
+  n=len(nums)
+  if n==0:
+    return nums 
+  k%=n
+  nums[:]=nums[-k:]+nums[:-k]
+nums1=[1,2,3,4,5,6,7]
+roate(nums1,3)
+print(nums1)
+
+
+num=[1,2,3,4,5,6,7]
+k=3
+first=num[-k:]
+second=num[:-k]
+print(first)
+print(second)
+   
+s1='mat'
+s2='atm'
+def ans(str):
+    char_index_map={}
+    left=0
+    max_length=0
+    for i in range(len(str)):
+        if(str[i]in char_index_map):
+            print("i is present in the map,str[i]")
+            left=max(left,char_index_map)
+                                                   
+ 
+def ans(str):
+    anagram={}
+    for i in str:
+        key=''.join(sorted(i))  
+        if(key in anagram):
+              anagram[key].append(i)
+        else:
+              anagram[key]=[i]   
+    return list(anagram values()) 
+print(ans(['math','hatm']))          
+
+s1='maht'
+s2='atm'
+if sorted(s1)==sorted(s2):
+    print('yes')
+else:
+    print('no')     
+ 
+
+
+s='hello@5924'
+count=0
+sum=0
+s1=''
+for c in s:
+    if c.isdigit():
+        sum=sum+int(c)
+        s1=s1+c
+        count+=1    
+print('reverse is :',s1[::-1])
+print(count)
+print(sum)
+
+'''
+'''
+#paramaterized
+class Employee:
+    def __init__(self,eid,name,des,salary):
+        self.eid=eid
+        self.name=name
+        self.des=des
+        self.salary=salary
+
+    def __init__(self):
+        print ("it is nt para")
+    def display(self):
+        print('Id is:',self.eid)
+        print('name is:',self.name)
+        print('des  is:',self.des)
+        print('salary  is:',self.salary)
+        print()
+e1=Employee(101,'me','eng',5000)
+e2=Employee(101,'meee','cse',15000)
+e1.display()
+e2.display()
+
+#non paramaterized
+
+class Employee:
+    def __init__(self):
+        self.eid=101
+        self.name='me'
+        self.des='eng'
+        self.salary=1500
+
+  
+    def display(self):
+        print('Id is:',self.eid)
+        print('name is:',self.name)
+        print('des  is:',self.des)
+        print('salary  is:',self.salary)
+        print()
+e1=Employee()
+e2=Employee()
+e3=Employee()
+
+e1.display()
+e2.display()
+
+#non paramaterizred
+
+class Laptop:
+    def __init__(self):
+        self.name='hp'
+        self.version=2.1
+        self.core='I5'
+        self.storage='128GB'
+
+  
+    def display(self):
+        print('name is:',self.name)
+        print('version is:',self.version)
+        print('core is:',self.core)
+        print('storage  is:',self.storage)
+        print()
+e1=Laptop()
+e2=Laptop()
+e3=Laptop()
+
+e1.display()
+e2.display()
+
+#paramterized
+
+class Laptop:
+    version=12.0
+    def __init__(self,name,core,storage):
+        self.name=name
+        self.core=core
+    
+        self.storage=storage
+
+    def display(self):
+        print('name is:',self.name)
+        print('version is:',self.version)
+        print('core is:',self.core)
+        print('storage is:',self.storage)
+        print()
+e1=Laptop('dell','I5','128GB')
+e2=Laptop('leanov','I5','128GB')
+
+e1.display()
+e2.display()
+
+
+class Employee:
+    def __init__(self):
+        self.eid=101
+        self.name='me'
+        self.des='eng'
+        self.salary=1500
+    def hike(self):
+        h=self.salary+(30*self.salary)//100 #1500*30/100=450,1500*450=1950
+
+        return h
+eobj1=Employee()
+print(eobj1.name,eobj1.eid,eobj1.des,eobj1.salary)
+print(eobj1.hike())
+print(eobj1.hike-( 20*eobj1.hike/100))
+
+
+
+s=50
+s1=20
+print(f'the cost of pen is {s} rs and pencile is {s1}')
+
+
+
+
+class Employee:
+    def __init__(self):
+        self.eid=101
+        self.name='me'
+        self.des='eng'
+        self.salary=15000
+    def __str__(self):
+        return (f'{self.eid},{self.name}')   
+e1=Employee()
+print(e1)
+
+
+class Person:
+    def __init__(self,name,age,address):
+        
+        self.name=name
+        self.age=age
+        self.address=address
+        
+    def __str__(self):
+        return f'{self.name,},{self.age}'
+class Student(Person):
+    def __ini__()    
+                                                            
+class Parent:
+    def p1():
+        print("the parent class method")
+class child(Parent):
+    def c1():
+        print("the child class method")   
+obj=hild
+obj.p1()
+obj.c1()      
+
+                                        
+class Parent1:
+    def p1():
+        print("the parent1 class method")
+        print()                                      
+class Parent2:
+    def p2():
+        print("the parent2 class method")
+        print()
+class child(Parent1,Parent2):
+    def c1():
+        print("the child class method")   
+        print()
+obj=child
+obj.p1()
+obj.p2()
+obj.c1()
+
+
+class Grand_Parent:
+    def p1():
+        print("the grand parent")
+        print() 
+class Parent(Grand_Parent):
+     def p2():
+        print("the parent")
+        print() 
+class Child(Parent):
+     def c1():
+        print("the child ")   
+        print()
+
+obj2=Child
+obj2.p1()
+
+obj2.p2()
+obj2.c1()
+
+class Parent1:
+    def p1():
+        print("the parent1 class method")
+        print()    
+class child1(Parent1):
+    def c1():
+        print("the child class method") 
+
+class child2(Parent1):
+    def c2():
+        print("the child class method") 
+class child3(Parent1):
+    def c3():
+        print("the child class method")         
+
+onj=child1
+onj.p1()
+onj.c1()
+obj=child2
+obj.c2()
+
+obj.p1()
+    
+from abc import ABC
+
+class Vechile:
+    def milage(ABC):
+        pass
+    def speed():
+        print('speed is 19kmph')
+    def Price():
+        print("40 lakhs")
+class Fortuner(Vechile):
+    def milage():
+        print('26kmph')
+    def speed():
+        print("20 max speed")
+class KIA(Vechile):
+    def milage():
+        print('26kmph')
+    def speed():
+        print("20 max speed")
+fobj=Fortuner
+fobj.milage()
+fobj.speed()     
+
+fobj.Price()     
+
+
+
+from abc import ABC
+class Mobile(ABC):
+    def clickingpics():#abstract
+        pass
+    def gaming():
+        pass
+    def price():#non abstract/concerent
+        print("the price is :45000")
+class Vivo(Mobile):
+    def clickingPics():
+        print("'40 Mega pixel")
+    def gaming():
+        print("pugb") 
+    def price():
+        print("55000")
+        print()
+class samsANG(Mobile):   
+    def clickingPics():
+        print("'40 Mega pixel")
+    def gaming():
+        print("pugb")  
+onj=Vivo
+onj.clickingPics()
+onj.gaming()
+onj.price()
+
+
+obj=samsANG
+obj.clickingPics()
+obj.gaming()
+obj.price()#if we nt define price fun in class it takes pricr fun from abstract created above
+
+class Data:
+    __name='megha'#private
+    _age=20#protect can be asscced within cls outside the class within package                                                          
+    Address="Herror"#public
+obj=Data
+print(obj.__name)
+print(obj.Address)
+print(obj._age)    
+
+class ATM:
+   def __init__(self): 
+   self.name="ummer"
+   self.bank="hdfc"
+   self.initialBal=75000
+   self. __pin=5681
+    def deposite(amount):
+        initialBal+=amount
+        return initialBal
+    def withdraw(amount):
+        initialBal-=amount
+        return initialBal
+e1=ATM
+print(e1.deposite(1000))         
+
+
+class ATM:
+   def __init__(self): 
+      name="ummer"
+      bank="hdfc"
+      initialBal=75000
+      __pin=5681
+   def 
+
+s="creamice"
+
+
+second=s[-4]
+third=s[-5]
+fourth=s[-6]
+five=s[-7]
+six=s[-8]
+seven=s[-2]
+eight=s[-1]
+
+
+print(second+third+fourth+five+six+seven+eight)
+
+
+print 
+#maercce
+'''
+import mysql.connector
+from mysql.connector import Error
+import unittest
+
+class ATM:
+   def __init__(self): 
+      self.name="ummer"
+      self._bank="hdfc"
+      self.__pin=5681
+      self.balance=10
+   def  check_pin(self):#class fun
+      return self.__pin
+   def withdraw(self,amount,pin):
+      if self.balance>0 and self.balance>=amount:
+         if self.__pin==pin:
+            self.balance-=amount
+         else:
+            print('inncorrect pin')
+            self.balance==self.balance
+      else:
+         print('insuffient funds') 
+
+      return self.balance
+   
+   
+    
+
+   def deposite(self,amount,pin):
+         if self.__pin==pin:
+            self.balance+=amount
+            print('deposited successfully')
+         else:
+            print('inncorrect pin')
+         return self.balance==self.balance
+      
+   def change_pin(self,newpin):
+      self.__pin=newpin
+      print("pin changed successfully",self.__pin)
+   def ministatement(self):
+      return f'Name is:{self.name},Bank:{self._bank},pin:{self.__pin},balance:{self.balance}'
+   
+class ATMManager:
+   def __init__(self,host,user,password,database):
+    try:
+         self.conn=mysql.connector.coonect(
+            host=host,
+            user=user,
+            password=password,
+            database=database
+         )
+         if self.conn.is_connected():
+             print("Connected to MySQl Database")
+             self.cursor=self.conn.cursor()
+         else:
+             print("connection to mysql failed")
+             self.cursor=None
+    except Error as e:
+        print(f"Error connecting to MySQL: (e)")
+        self.conn = None
+        self.cursor = None
+   def add_acc_holder(self,acc_no):
+      if self.cursor is None:
+          print("Cannot add Account Holder Details. No database connection.")
+          return
+      try:
+         query "INSERT INTO account (acc_no, name, bank, balance) VALUES (%s, %s, %s, %s)"
+         values (account.acc_no, account.name, account.bank, account.balance)
+         print(f"Attempting to insert: (values)") # Debugging output
+         self.cursor.execute(query, values)
+         self.conn.commit()
+         print(f" Account record for {account.acc no} added," )
+      except Error as e:
+         print("Failed to insert renewal: (e)")
+class TestATHApplicationSystem(unittest. TestCase):
+   def setup(self):
+    self.system ATHAdmin("localhost", "root", "your_password", "passport_renewal") 
+    self.record ATM (Umer', 9781234,5000)
+    self.system.add_renewal(self.record)
+    if __name__=="__main__":
+    unittest.main()
+obj=ATM()
+#access private variable using mang  ling
+print(obj._ATM__pin)
+print(obj.balance)
+print(obj._bank)
+print(obj.name)
+
+print(obj.deposite(4500,5681))
+print(obj.withdraw(100,5681))
+print(obj.change_pin(1234))
+print(obj.withdraw(200,5681))
+print(obj.ministatement())
+
+'''
+class Booking_Ticket:
+    def __init__ (self,name,age,mobilenum,address,gmail):
+        self.name=name
+        self.age=age
+        self.mobilenum=mobilenum
+        self.address=address
+        self.gmail=gmail
+        self.amount=1000
+    def __str__(self):
+        return f'{self.name},{ self.age},{self.gmail}'
+class  MovieDetails(Booking_Ticket):
+    queue=[]
+    def __init__(self,name,age,mobilenum,address,gmail,movie,seat_no,time,price,):
+        super().__init__(name,age,mobilenum,address,gmail)
+        self.movie=movie
+        self.seat_no=seat_no
+        self.time=time
+        self.price=price
+        self.cupon_code="FREE123"
+      
+    def __str__(self):
+        return f'{self.movie},{ self.seat_no},{self.time},{self.price}'                             
+    def booking(self):
+         status='third'
+         if status=='first':
+            price=600
+         if status=='second':
+            price=400
+         if status=='third':
+            price=300
+         return price
+    def billing(self,cupon_code):
+        if cupon_code==self.cupon_code:
+            discount=self.booking()-15*(self.booking())//100
+        else:
+            print('incorrect cuponcoad')
+            discount=0
+        return discount
+    def get_amount(self) :
+        
+        return self.amount
+    def cancel(self):
+           cus_amount=self.amount
+           discount=self.billing("FREE123")
+           if self.amount>=discount:
+               print("Booked successfully")
+           else:
+               print("cancel initialized")
+           return 
+  
+        
+
+
+        
+        
+        
+c1=Booking_Ticket ('megha', 23 , '9663095374', 'herror', 'gmail@com0')
+m1=MovieDetails('megha', 23 , '9663095374', 'herror', 'gmail@com0','kantara','353','12:00Am',500)
+print(m1)
+print (f'Atual price is: {m1.booking()}')
+print (f'Actual 15% discount {m1.billing("FREE123")}')
+
+print(m1.get_amount())         
+m1.cancel()
